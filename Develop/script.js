@@ -8,8 +8,8 @@ let twoInput = document.querySelector('#two');
 let threeInput = document.querySelector('#three');
 let fourInput = document.querySelector('#four');
 let fiveInput = document.querySelector('#five');
-let save = document.querySelector('.saveBtn')
-
+let save = document.querySelector('.saveBtn');
+let timeBlk = document.querySelector('.hour');
 
 let NowMoment = moment().format("llll");
 
@@ -31,10 +31,10 @@ if(localStorage.getItem('time') === null){
 }; 
 let timeBlocks = JSON.parse(localStorage.getItem('time'));
 
-$(save).on("click", function(event){
+$(save).click(function(event){
   let newTime = timeBlocks
-  newTime["9am"] = ;
-  console.log(newTime);
+  newTime[i] =
+  
   localStorage.setItem("time", newTime);
 });
 
